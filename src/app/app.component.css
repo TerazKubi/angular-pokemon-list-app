@@ -1,0 +1,14 @@
+.navBar{
+    background-color: rgb(75, 75, 75);
+    height: 50px;
+    color: #2769be;
+    font-size: 40px;
+    font-weight: 700;
+    text-wrap: nowrap;
+
+}
+.navBar div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}

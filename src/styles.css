@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: gray;
+    margin: 0px;
+    font-family: "Fira Sans", "Trebuchet MS", Ubuntu, Helvetica, Arial, sans-serif;
+}

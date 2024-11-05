@@ -1,0 +1,37 @@
+
+
+<div class="pokemon-list-container">
+    <h1>pokemon list</h1>
+    <div *ngIf="loading">
+        <h2>Loading ...</h2>
+    </div>
+    <div *ngIf="!loading">
+        <div *ngIf="data">
+
+            <div class="pokemon-list">
+                <div *ngFor="let pokemon of data.results" class="pokemon-list-item">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon.id }}.png" alt="img">
+                    <span (click)="goToPokemonDetails(pokemon.id!)">{{ pokemon.name | titlecase}}</span>
+                </div>
+            </div>
+            <div class="navigation-buttons-container">  
+                <div *ngIf="data.previous">
+                    <button (click)="prev()">< Prev</button>
+                </div>
+                <div *ngIf="data.next">
+                    <button (click)="next()" >Next ></button>
+                </div>
+            </div>
+        
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+<div *ngIf="errorMessage">
+    <p>Error: {{ errorMessage }}</p>
+    <button (click)="loadPokemons()">Retry</button>
+</div>
