@@ -1,5 +1,10 @@
 # PokemonApp
 
+![pokemon1](https://github.com/user-attachments/assets/d017731a-60a3-4b0c-806a-47840d3e5fc6)
+
+![pokemon2](https://github.com/user-attachments/assets/3f4662ca-e06b-40ae-9944-026e23ec52a8)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
 ## Development server
