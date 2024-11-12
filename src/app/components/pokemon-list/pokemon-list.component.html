@@ -9,9 +9,10 @@
         <div *ngIf="data">
 
             <div class="pokemon-list">
-                <div *ngFor="let pokemon of data.results" class="pokemon-list-item">
+                <div *ngFor="let pokemon of data.results" [ngClass] = "{'fav-border': pokemon.isFav }" class="pokemon-list-item">
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ pokemon.id }}.png" alt="img">
                     <span (click)="goToPokemonDetails(pokemon.id!)">{{ pokemon.name | titlecase}}</span>
+                    <button (click)="dodaj_do_ulu(pokemon.id!)">Dodaj</button>
                 </div>
             </div>
             <div class="navigation-buttons-container">  

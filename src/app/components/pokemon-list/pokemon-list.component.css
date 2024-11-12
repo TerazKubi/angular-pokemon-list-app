@@ -22,9 +22,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    border: 1px solid white;
+    box-sizing: border-box;
     width: 120px;
-    height: 120px;
+    /* height: 120px; */
 }
 .pokemon-list-item span{
     color: #2769be;
@@ -54,4 +55,9 @@
 .navigation-buttons-container button:hover{
     cursor: pointer;
     background-color: rgb(104, 104, 104);
+}
+
+
+.fav-border{
+    border: 1px solid red;
 }
